@@ -1,12 +1,12 @@
 # Color-Based Object Tracker
 
-A real-time computer vision app that tracks colored objects using your webcam.
+A real-time computer vision app that tracks coloured objects using your webcam.
 
 Built with Python and OpenCV.
 
 ## What it does
 
-- Opens your webcam and detects a colored object in real time
+- Opens your webcam and detects a coloured object in real time
 - Draws a circle around the object and shows its coordinates
 - Displays a "mask" window showing exactly what the program sees
 - Supports red, blue, green, and yellow out of the box
@@ -41,7 +41,7 @@ Point your webcam at a **red** object (like a red cup or pen lid) and watch it g
 
 5. **Press `Q` to quit**
 
-## Change the tracked color
+## Change the tracked colour
 
 Open `tracker.py` and change this line near the top:
 
@@ -51,7 +51,7 @@ ACTIVE_COLOR = "red"  # options: "red", "blue", "green", "yellow"
 
 ## How it works
 
-1. Each webcam frame is converted from BGR to **HSV color space** — HSV separates color (hue) from brightness, making color detection more reliable under different lighting.
+1. Each webcam frame is converted from BGR to **HSV colour space** — HSV separates color (hue) from brightness, making color detection more reliable under different lighting.
 2. A **color mask** is created by filtering pixels within the target color's HSV range.
 3. **Morphological operations** (erode + dilate) clean up noise in the mask.
 4. **Contours** are detected in the mask and the largest one is assumed to be the tracked object.
