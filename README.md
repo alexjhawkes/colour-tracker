@@ -1,4 +1,4 @@
-# Color-Based Object Tracker
+# Colour-Based Object Tracker
 
 A real-time computer vision app that tracks coloured objects using your webcam.
 
